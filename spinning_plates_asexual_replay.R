@@ -55,7 +55,7 @@ c = 0.01
 
 reps = 190
 stopTime = 500
-setwd("/Users/draghi/Desktop/outputs/")
+setwd("/Users/user/Desktop/outputs/")
 
 # Base rate of death; base rate of birth is 1.
 baseDeath = 0.2

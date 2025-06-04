@@ -54,7 +54,7 @@ fitMap = (1 - s)^(L:0)
 c = 0.16
 
 reps = 5
-setwd("/Users/draghi/Desktop/outputs")
+setwd("/Users/user/Desktop/outputs")
 
 # Base rate of death; base rate of birth is 1.
 baseDeath = 0.2

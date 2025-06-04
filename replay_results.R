@@ -1,5 +1,5 @@
 library(viridis)
-setwd("/Users/draghi/Desktop/outputs")
+setwd("/Users/user/Desktop/outputs")
 expName = "A"
 dt = read.table(paste0("replay_", expName, ".txt"), header=FALSE, col.names = c("id", "selection", "prob", "mu", "pref", "seed", "time", "pheno", "initial"))
 nIds = dim(dt)[1]

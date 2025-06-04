@@ -13,8 +13,8 @@ findInflection = function(xs, ys)
   return(-mod$coefficients[1]/mod$coefficients[2])
 }
 
-d_np1 = read.table("/Users/draghi/Desktop/outputs/survival_A_2.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
-d_np2 = read.table("/Users/draghi/Desktop/outputs/survival_K_2.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
+d_np1 = read.table("/Users/user/Desktop/outputs/survival_A_2.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
+d_np2 = read.table("/Users/user/Desktop/outputs/survival_K_2.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
 
 d_np = data.frame(prob = sort(unique(d_np1$prob, d_np2$prob)))
 d_np$survived = rep(0, dim(d_np)[1])
@@ -39,8 +39,8 @@ for(i in 1:dim(d_np)[1])
   d_np$survived[i] = survived
 }
 
-d_p1 = read.table("/Users/draghi/Desktop/outputs/survival_A_1.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
-d_p2 = read.table("/Users/draghi/Desktop/outputs/survival_K_1.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
+d_p1 = read.table("/Users/user/Desktop/outputs/survival_A_1.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
+d_p2 = read.table("/Users/user/Desktop/outputs/survival_K_1.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
 
 d_p = data.frame(prob = sort(unique(d_p1$prob, d_p2$prob)))
 d_p$survived = rep(0, dim(d_p)[1])
@@ -65,7 +65,7 @@ for(i in 1:dim(d_p)[1])
   d_p$survived[i] = survived
 }
 
-d_s = read.table("/Users/draghi/Desktop/outputs/survival_C.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
+d_s = read.table("/Users/user/Desktop/outputs/survival_C.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
 # Remove excessive treatments with low replication
 d_s = d_s[1:18,]
 probs = sort(unique(c(d_np$prob, d_p$prob, d_s$prob)))
@@ -149,7 +149,7 @@ print(quantile(ps, probs = c(0.025, 0.975)))
 
 legend("topright", c("Generalists", "Niche evolves", "Specialists"), col=c("orange", "dodgerblue", "chartreuse3"), lwd=2, pch=16)
 
-dh = read.table("/Users/draghi/Desktop/outputs/survival_X.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
+dh = read.table("/Users/user/Desktop/outputs/survival_X.txt", header=FALSE, col.names=c("prob", "survived", "reps"))
 points(dh$prob, dh$survived / dh$reps, col="darkorchid")
 for(i in 1:length(dh$prob))
 {

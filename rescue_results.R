@@ -1,4 +1,4 @@
-setwd("/Users/draghi/Desktop/outputs")
+setwd("/Users/user/Desktop/outputs")
 expName = "E"
 dt = read.table(paste0("table_", expName, ".txt"), header=TRUE)
 maxTime = 101980

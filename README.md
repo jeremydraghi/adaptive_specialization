@@ -1,1 +1,5 @@
 # adaptive_specialization
+
+This repository presents a minimum set of code to allow the reader to examine the bases of the main results and validate the general approach, prior to publication. I therefore focus on supplying the parts needed to follow the complete processes behind figures 2 and 3. Upon publication, all code and data sets will be archived. 
+
+Primary simulations are conducted with the file "spinning_plates_asexual_batch.R". The results files are then digested/analysed by several other scripts. "rescue_results.R" processes each file to produce a simple table of survival results, feeding into plotting scripts like "figure_02.R" Replay experiments re conudcted with the aid of several variants of the main algorithm. "rescue_replay.R" is used to determine which particular phenotypes and time-periods will be the foci for replay experiments. "spinning_plates_asexual_redux.R" then prepares the populations, environments, and other needed records for the replay experiments, which are then conducted by "spinning_plates_asexual_replay.R". Finally, "replay_results.R" is used to make Figure 3.

@@ -53,7 +53,7 @@ fitMap = (1 - s)^(L:0)
 # Search cost
 c = 0.01
 
-setwd("/Users/draghi/Desktop/outputs/")
+setwd("/Users/user/Desktop/outputs/")
 
 # Base rate of death; base rate of birth is 1.
 baseDeath = 0.2

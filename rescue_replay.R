@@ -1,4 +1,4 @@
-setwd("/Users/draghi/Desktop/outputs/")
+setwd("/Users/user/Desktop/outputs/")
 expName = "K"
 dt = read.table(paste0("table_", expName, ".txt"), header=TRUE)
 sample = read.table(paste0("types_", expName, "_", formatC(1, width=3, flag="0"), ".txt"), header=FALSE)
